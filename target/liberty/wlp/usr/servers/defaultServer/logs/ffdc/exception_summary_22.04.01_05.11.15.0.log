@@ -1,0 +1,8 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      2    1/04/22 05:11:14:710 COT    1/04/22 05:11:15:174 COT com.ibm.websphere.servlet.error.ServletErrorReport com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter 82
+                                                                            - C:\programacion\liberty\seguridad\guide-security-intro\finish\target\liberty\wlp\usr\servers\defaultServer\logs\ffdc\ffdc_22.04.01_05.11.14.0.log
+     1      1    1/04/22 05:11:15:068 COT    1/04/22 05:11:15:068 COT com.ibm.websphere.servlet.error.ServletErrorReport com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter 144
+                                                                            - C:\programacion\liberty\seguridad\guide-security-intro\finish\target\liberty\wlp\usr\servers\defaultServer\logs\ffdc\ffdc_22.04.01_05.11.15.0.log
+------+------+---------------------------+---------------------------+---------------------------

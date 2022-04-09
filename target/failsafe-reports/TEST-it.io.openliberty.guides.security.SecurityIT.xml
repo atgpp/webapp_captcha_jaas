@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" name="it.io.openliberty.guides.security.SecurityIT" time="20.811" tests="4" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="microshed_https_port" value="9443"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\programacion\liberty\seguridad\guide-security-intro\finish\target\test-classes;C:\programacion\liberty\seguridad\guide-security-intro\finish\target\classes;C:\Users\alvar\.m2\repository\jakarta\platform\jakarta.jakartaee-api\8.0.0\jakarta.jakartaee-api-8.0.0.jar;C:\Users\alvar\.m2\repository\jakarta\enterprise\jakarta.enterprise.cdi-api\2.0.2\jakarta.enterprise.cdi-api-2.0.2.jar;C:\Users\alvar\.m2\repository\jakarta\interceptor\jakarta.interceptor-api\1.2.5\jakarta.interceptor-api-1.2.5.jar;C:\Users\alvar\.m2\repository\jakarta\inject\jakarta.inject-api\1.0\jakarta.inject-api-1.0.jar;C:\Users\alvar\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\2.1.6\jakarta.ws.rs-api-2.1.6.jar;C:\Users\alvar\.m2\repository\jakarta\json\bind\jakarta.json.bind-api\1.0.2\jakarta.json.bind-api-1.0.2.jar;C:\Users\alvar\.m2\repository\jakarta\json\jakarta.json-api\1.1.6\jakarta.json-api-1.1.6.jar;C:\Users\alvar\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\alvar\.m2\repository\org\eclipse\microprofile\config\microprofile-config-api\2.0\microprofile-config-api-2.0.jar;C:\Users\alvar\.m2\repository\org\eclipse\microprofile\fault-tolerance\microprofile-fault-tolerance-api\3.0\microprofile-fault-tolerance-api-3.0.jar;C:\Users\alvar\.m2\repository\org\eclipse\microprofile\health\microprofile-health-api\3.1\microprofile-health-api-3.1.jar;C:\Users\alvar\.m2\repository\org\eclipse\microprofile\metrics\microprofile-metrics-api\3.0\microprofile-metrics-api-3.0.jar;C:\Users\alvar\.m2\repository\org\eclipse\microprofile\jwt\microprofile-jwt-auth-api\1.2\microprofile-jwt-auth-api-1.2.jar;C:\Users\alvar\.m2\repository\org\eclipse\microprofile\openapi\microprofile-openapi-api\2.0\microprofile-openapi-api-2.0.jar;C:\Users\alvar\.m2\repository\org\eclipse\microprofile\rest\client\microprofile-rest-client-api\2.0\microprofile-rest-client-api-2.0.jar;C:\Users\alvar\.m2\repository\org\eclipse\microprofile\opentracing\microprofile-opentracing-api\2.0\microprofile-opentracing-api-2.0.jar;C:\Users\alvar\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.1\junit-jupiter-5.8.1.jar;C:\Users\alvar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.1\junit-jupiter-api-5.8.1.jar;C:\Users\alvar\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\alvar\.m2\repository\org\junit\platform\junit-platform-commons\1.8.1\junit-platform-commons-1.8.1.jar;C:\Users\alvar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\alvar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.1\junit-jupiter-params-5.8.1.jar;C:\Users\alvar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.1\junit-jupiter-engine-5.8.1.jar;C:\Users\alvar\.m2\repository\org\junit\platform\junit-platform-engine\1.8.1\junit-platform-engine-1.8.1.jar;C:\Users\alvar\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\alvar\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\alvar\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\alvar\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\alvar\.m2\repository\com\ibm\websphere\appserver\api\com.ibm.websphere.appserver.api.security\1.2.20\com.ibm.websphere.appserver.api.security-1.2.20.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="microshed_hostname" value="localhost"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="user.country" value="CO"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="liberty.https.port" value="9443"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
+    <property name="sun.java.command" value="C:\Windows\TEMP\surefire1183367278539953208\surefirebooter5782284008566855567.jar C:\Windows\Temp\surefire1183367278539953208 2022-04-01T05-30-28_603-jvmRun1 surefire3911393060249039265tmp surefire_03425137078000941992tmp"/>
+    <property name="surefire.test.class.path" value="C:\programacion\liberty\seguridad\guide-security-intro\finish\target\test-classes;C:\programacion\liberty\seguridad\guide-security-intro\finish\target\classes;C:\Users\alvar\.m2\repository\jakarta\platform\jakarta.jakartaee-api\8.0.0\jakarta.jakartaee-api-8.0.0.jar;C:\Users\alvar\.m2\repository\jakarta\enterprise\jakarta.enterprise.cdi-api\2.0.2\jakarta.enterprise.cdi-api-2.0.2.jar;C:\Users\alvar\.m2\repository\jakarta\interceptor\jakarta.interceptor-api\1.2.5\jakarta.interceptor-api-1.2.5.jar;C:\Users\alvar\.m2\repository\jakarta\inject\jakarta.inject-api\1.0\jakarta.inject-api-1.0.jar;C:\Users\alvar\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\2.1.6\jakarta.ws.rs-api-2.1.6.jar;C:\Users\alvar\.m2\repository\jakarta\json\bind\jakarta.json.bind-api\1.0.2\jakarta.json.bind-api-1.0.2.jar;C:\Users\alvar\.m2\repository\jakarta\json\jakarta.json-api\1.1.6\jakarta.json-api-1.1.6.jar;C:\Users\alvar\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\alvar\.m2\repository\org\eclipse\microprofile\config\microprofile-config-api\2.0\microprofile-config-api-2.0.jar;C:\Users\alvar\.m2\repository\org\eclipse\microprofile\fault-tolerance\microprofile-fault-tolerance-api\3.0\microprofile-fault-tolerance-api-3.0.jar;C:\Users\alvar\.m2\repository\org\eclipse\microprofile\health\microprofile-health-api\3.1\microprofile-health-api-3.1.jar;C:\Users\alvar\.m2\repository\org\eclipse\microprofile\metrics\microprofile-metrics-api\3.0\microprofile-metrics-api-3.0.jar;C:\Users\alvar\.m2\repository\org\eclipse\microprofile\jwt\microprofile-jwt-auth-api\1.2\microprofile-jwt-auth-api-1.2.jar;C:\Users\alvar\.m2\repository\org\eclipse\microprofile\openapi\microprofile-openapi-api\2.0\microprofile-openapi-api-2.0.jar;C:\Users\alvar\.m2\repository\org\eclipse\microprofile\rest\client\microprofile-rest-client-api\2.0\microprofile-rest-client-api-2.0.jar;C:\Users\alvar\.m2\repository\org\eclipse\microprofile\opentracing\microprofile-opentracing-api\2.0\microprofile-opentracing-api-2.0.jar;C:\Users\alvar\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.1\junit-jupiter-5.8.1.jar;C:\Users\alvar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.1\junit-jupiter-api-5.8.1.jar;C:\Users\alvar\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\alvar\.m2\repository\org\junit\platform\junit-platform-commons\1.8.1\junit-platform-commons-1.8.1.jar;C:\Users\alvar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\alvar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.1\junit-jupiter-params-5.8.1.jar;C:\Users\alvar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.1\junit-jupiter-engine-5.8.1.jar;C:\Users\alvar\.m2\repository\org\junit\platform\junit-platform-engine\1.8.1\junit-platform-engine-1.8.1.jar;C:\Users\alvar\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\alvar\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\alvar\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\alvar\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\alvar\.m2\repository\com\ibm\websphere\appserver\api\com.ibm.websphere.appserver.api.security\1.2.20\com.ibm.websphere.appserver.api.security-1.2.20.jar;"/>
+    <property name="http.port" value="9080"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\alvar"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_144\jre"/>
+    <property name="basedir" value="C:\programacion\liberty\seguridad\guide-security-intro\finish"/>
+    <property name="https.port" value="9443"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="wlp.user.dir" value="C:\programacion\liberty\seguridad\guide-security-intro\finish\target\liberty\wlp\usr"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="microshed_http_port" value="9080"/>
+    <property name="surefire.real.class.path" value="C:\Windows\TEMP\surefire1183367278539953208\surefirebooter5782284008566855567.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="user.name" value="alvar"/>
+    <property name="liberty.hostname" value="localhost"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="liberty.http.port" value="9080"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\alvar\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Windows\TEMP\"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="user.dir" value="C:\programacion\liberty\seguridad\guide-security-intro\finish"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python39\Scripts\;C:\Python39\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\programacion\apache-maven-3.8.4-bin\apache-maven-3.8.4\bin\;C:\Users\alvar\AppData\Local\Microsoft\WindowsApps;C:\Users\alvar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\alvar\.dotnet\tools;C:\Users\alvar\AppData\Local\GitHubDesktop\bin;C:\Users\alvar\AppData\Roaming\npm;C:\Users\alvar\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Program Files\Java\jdk1.8.0_144\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testAuthorizationFail" classname="it.io.openliberty.guides.security.SecurityIT" time="17.843">
+    <failure message="Expected 403 status code for login ==&gt; expected: &lt;403&gt; but was: &lt;200&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Expected 403 status code for login ==> expected: <403> but was: <200>
+	at it.io.openliberty.guides.security.SecurityIT.executeURL(SecurityIT.java:127)
+	at it.io.openliberty.guides.security.SecurityIT.testAuthorizationFail(SecurityIT.java:77)
+]]></failure>
+  </testcase>
+  <testcase name="testAuthenticationFail" classname="it.io.openliberty.guides.security.SecurityIT" time="0.042"/>
+  <testcase name="testAuthorizationForUser" classname="it.io.openliberty.guides.security.SecurityIT" time="1.758">
+    <failure message="The actual content did not contain the userid &quot;alice&quot;. It was:&#10;&lt;!-- tag::comment[] --&gt;&#10;&lt;!--&#10;  Copyright (c) 2018 IBM Corporation and others.&#10;  All rights reserved. This program and the accompanying materials&#10;  are made available under the terms of the Eclipse Public License v1.0&#10;  which accompanies this distribution, and is available at&#10;  http://www.eclipse.org/legal/epl-v10.html&#10;  Contributors:&#10;      IBM Corporation - initial API and implementation&#10;--&gt;&#10;&lt;!-- end::comment[] --&gt;&#10;&lt;html&gt;&#10;    &lt;title&gt;Securing Web Application&lt;/title&gt;&#10;    &lt;body&gt;&#10;      &lt;h2&gt;Welcome to Sample Application&lt;/h2&gt;&#10;      This is a protected application. Login to continue.&#10;      &lt;FORM METHOD=POST ACTION=&quot;MyLoginController&quot;&gt;&#10;        &lt;p&gt;&#10;          &lt;BR&gt;&#10;          Username&#10;          &lt;input type=&quot;text&quot; size=&quot;20&quot; name=&quot;j_username&quot;&gt;&#10;        &lt;/p&gt;&#10;        &lt;p&gt;&#10;          &lt;BR&gt;&#10;          Captcha&#10;          &lt;input type=&quot;text&quot; size=&quot;20&quot; name=&quot;captcha&quot;&gt;        &#10;        &lt;/p&gt;&#10;        &lt;p&gt;&#10;          Password&#10;          &lt;input type=&quot;password&quot; size=&quot;20&quot; name=&quot;j_password&quot; autocomplete=&quot;off&quot;&gt;&#10;          &lt;BR&gt;&#10;          &lt;BR&gt;&#10;          &lt;input type=&quot;submit&quot; name=&quot;Go&quot; value=&quot;Go&quot;&gt;&#10;        &lt;/p&gt;&#10;      &lt;/form&gt;&#10;      &lt;script type=&quot;text/javascript&quot;&gt;&#10;        // Force safari to refresh the page&#10;        // if a cached copy was loaded&#10;        // from the browser back-forward cache.&#10;        window.onpageshow = function(e) {&#10;          if (e.persisted) {&#10;            window.location.reload();&#10;          }&#10;        }&#10;      &lt;/script&gt;&#10;    &lt;/body&gt;&#10;&lt;/html&gt;&#10; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+The actual content did not contain the userid "alice". It was:
+<!-- tag::comment[] -->
+<!--
+  Copyright (c) 2018 IBM Corporation and others.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the Eclipse Public License v1.0
+  which accompanies this distribution, and is available at
+  http://www.eclipse.org/legal/epl-v10.html
+  Contributors:
+      IBM Corporation - initial API and implementation
+-->
+<!-- end::comment[] -->
+<html>
+    <title>Securing Web Application</title>
+    <body>
+      <h2>Welcome to Sample Application</h2>
+      This is a protected application. Login to continue.
+      <FORM METHOD=POST ACTION="MyLoginController">
+        <p>
+          <BR>
+          Username
+          <input type="text" size="20" name="j_username">
+        </p>
+        <p>
+          <BR>
+          Captcha
+          <input type="text" size="20" name="captcha">        
+        </p>
+        <p>
+          Password
+          <input type="password" size="20" name="j_password" autocomplete="off">
+          <BR>
+          <BR>
+          <input type="submit" name="Go" value="Go">
+        </p>
+      </form>
+      <script type="text/javascript">
+        // Force safari to refresh the page
+        // if a cached copy was loaded
+        // from the browser back-forward cache.
+        window.onpageshow = function(e) {
+          if (e.persisted) {
+            window.location.reload();
+          }
+        }
+      </script>
+    </body>
+</html>
+ ==> expected: <true> but was: <false>
+	at it.io.openliberty.guides.security.SecurityIT.executeURL(SecurityIT.java:137)
+	at it.io.openliberty.guides.security.SecurityIT.testAuthorizationForUser(SecurityIT.java:69)
+]]></failure>
+  </testcase>
+  <testcase name="testAuthorizationForAdmin" classname="it.io.openliberty.guides.security.SecurityIT" time="1.158">
+    <failure message="The actual content did not contain the userid &quot;bob&quot;. It was:&#10;&lt;!-- tag::comment[] --&gt;&#10;&lt;!--&#10;  Copyright (c) 2018 IBM Corporation and others.&#10;  All rights reserved. This program and the accompanying materials&#10;  are made available under the terms of the Eclipse Public License v1.0&#10;  which accompanies this distribution, and is available at&#10;  http://www.eclipse.org/legal/epl-v10.html&#10;  Contributors:&#10;      IBM Corporation - initial API and implementation&#10;--&gt;&#10;&lt;!-- end::comment[] --&gt;&#10;&lt;html&gt;&#10;    &lt;title&gt;Securing Web Application&lt;/title&gt;&#10;    &lt;body&gt;&#10;      &lt;h2&gt;Welcome to Sample Application&lt;/h2&gt;&#10;      This is a protected application. Login to continue.&#10;      &lt;FORM METHOD=POST ACTION=&quot;MyLoginController&quot;&gt;&#10;        &lt;p&gt;&#10;          &lt;BR&gt;&#10;          Username&#10;          &lt;input type=&quot;text&quot; size=&quot;20&quot; name=&quot;j_username&quot;&gt;&#10;        &lt;/p&gt;&#10;        &lt;p&gt;&#10;          &lt;BR&gt;&#10;          Captcha&#10;          &lt;input type=&quot;text&quot; size=&quot;20&quot; name=&quot;captcha&quot;&gt;        &#10;        &lt;/p&gt;&#10;        &lt;p&gt;&#10;          Password&#10;          &lt;input type=&quot;password&quot; size=&quot;20&quot; name=&quot;j_password&quot; autocomplete=&quot;off&quot;&gt;&#10;          &lt;BR&gt;&#10;          &lt;BR&gt;&#10;          &lt;input type=&quot;submit&quot; name=&quot;Go&quot; value=&quot;Go&quot;&gt;&#10;        &lt;/p&gt;&#10;      &lt;/form&gt;&#10;      &lt;script type=&quot;text/javascript&quot;&gt;&#10;        // Force safari to refresh the page&#10;        // if a cached copy was loaded&#10;        // from the browser back-forward cache.&#10;        window.onpageshow = function(e) {&#10;          if (e.persisted) {&#10;            window.location.reload();&#10;          }&#10;        }&#10;      &lt;/script&gt;&#10;    &lt;/body&gt;&#10;&lt;/html&gt;&#10; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+The actual content did not contain the userid "bob". It was:
+<!-- tag::comment[] -->
+<!--
+  Copyright (c) 2018 IBM Corporation and others.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the Eclipse Public License v1.0
+  which accompanies this distribution, and is available at
+  http://www.eclipse.org/legal/epl-v10.html
+  Contributors:
+      IBM Corporation - initial API and implementation
+-->
+<!-- end::comment[] -->
+<html>
+    <title>Securing Web Application</title>
+    <body>
+      <h2>Welcome to Sample Application</h2>
+      This is a protected application. Login to continue.
+      <FORM METHOD=POST ACTION="MyLoginController">
+        <p>
+          <BR>
+          Username
+          <input type="text" size="20" name="j_username">
+        </p>
+        <p>
+          <BR>
+          Captcha
+          <input type="text" size="20" name="captcha">        
+        </p>
+        <p>
+          Password
+          <input type="password" size="20" name="j_password" autocomplete="off">
+          <BR>
+          <BR>
+          <input type="submit" name="Go" value="Go">
+        </p>
+      </form>
+      <script type="text/javascript">
+        // Force safari to refresh the page
+        // if a cached copy was loaded
+        // from the browser back-forward cache.
+        window.onpageshow = function(e) {
+          if (e.persisted) {
+            window.location.reload();
+          }
+        }
+      </script>
+    </body>
+</html>
+ ==> expected: <true> but was: <false>
+	at it.io.openliberty.guides.security.SecurityIT.executeURL(SecurityIT.java:137)
+	at it.io.openliberty.guides.security.SecurityIT.testAuthorizationForAdmin(SecurityIT.java:61)
+]]></failure>
+  </testcase>
+</testsuite>

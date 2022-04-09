@@ -1,0 +1,12 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      2    1/04/22 05:39:11:947 COT    1/04/22 06:47:36:769 COT java.lang.NullPointerException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105
+                                                                            - C:\programacion\liberty\seguridad\guide-security-intro\finish\target\liberty\wlp\usr\servers\defaultServer\logs\ffdc\ffdc_22.04.01_05.39.11.0.log
+     1      1    1/04/22 05:40:20:292 COT    1/04/22 05:40:20:292 COT java.lang.NullPointerException com.ibm.ws.security.authentication.jaas.modules.UsernameAndPasswordLoginModule 114
+                                                                            - C:\programacion\liberty\seguridad\guide-security-intro\finish\target\liberty\wlp\usr\servers\defaultServer\logs\ffdc\ffdc_22.04.01_05.40.20.0.log
+     2      1    1/04/22 05:40:20:309 COT    1/04/22 05:40:20:309 COT java.lang.NullPointerException com.ibm.ws.security.authentication.jaas.modules.CertificateLoginModule 147
+                                                                            - C:\programacion\liberty\seguridad\guide-security-intro\finish\target\liberty\wlp\usr\servers\defaultServer\logs\ffdc\ffdc_22.04.01_05.40.20.1.log
+     3      1    1/04/22 05:40:20:328 COT    1/04/22 05:40:20:328 COT java.lang.NullPointerException com.ibm.ws.security.authentication.jaas.modules.TokenLoginModule 116
+                                                                            - C:\programacion\liberty\seguridad\guide-security-intro\finish\target\liberty\wlp\usr\servers\defaultServer\logs\ffdc\ffdc_22.04.01_05.40.20.2.log
+------+------+---------------------------+---------------------------+---------------------------

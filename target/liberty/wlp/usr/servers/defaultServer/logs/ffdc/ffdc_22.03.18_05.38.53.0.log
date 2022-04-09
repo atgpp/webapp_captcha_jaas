@@ -1,0 +1,296 @@
+------Start of DE processing------ = [18/03/22 05:38:53:780 COT]
+Exception = javax.net.ssl.SSLException
+Source = com.ibm.ws.channel.ssl.internal.SSLReadServiceContext$SSLReadCompletedCallback
+probeid = 798
+Stack Dump = javax.net.ssl.SSLException: Received fatal alert: bad_certificate
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208)
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1666)
+	at sun.security.ssl.SSLEngineImpl.fatal(SSLEngineImpl.java:1634)
+	at sun.security.ssl.SSLEngineImpl.recvAlert(SSLEngineImpl.java:1800)
+	at sun.security.ssl.SSLEngineImpl.readRecord(SSLEngineImpl.java:1083)
+	at sun.security.ssl.SSLEngineImpl.readNetRecord(SSLEngineImpl.java:907)
+	at sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:781)
+	at javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:664)
+	at com.ibm.ws.channel.ssl.internal.SSLReadServiceContext.decryptMessage(SSLReadServiceContext.java:1212)
+	at com.ibm.ws.channel.ssl.internal.SSLReadServiceContext$SSLReadCompletedCallback.complete(SSLReadServiceContext.java:1800)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Dump of callerThis
+Object type = com.ibm.ws.channel.ssl.internal.SSLReadServiceContext$SSLReadCompletedCallback
+  myCallback = class com.ibm.ws.channel.ssl.internal.SSLConnectionLink$MyReadCompletedCallback@11302b44
+    decryptedNetBuffer = class com.ibm.ws.bytebuffer.internal.PooledWsByteBufferImpl@40c2d25c
+      tc = class com.ibm.websphere.ras.TraceComponent@2c7a1d59
+      serialVersionUID = -7843989267561719849
+      getMin = -1
+      getMax = -1
+      putMin = -1
+      putMax = -1
+      readMin = -1
+      readMax = -1
+      COPY_ALL_INIT = 0
+      COPY_WHEN_NEEDED_STATE1 = 1
+      COPY_WHEN_NEEDED_STATE2 = 2
+      COPY_ALL_FINAL = 4
+      actionState = 0
+      actionAccess = class java.lang.Object@28457288
+      identifier = 0
+      intReferenceCount = 1
+      pool = class com.ibm.ws.bytebuffer.internal.WsByteBufferPool@55088acb
+      owners = null
+      allWsByteBuffers = null
+      serialVersionUID = 3794216509672320032
+      tc = class com.ibm.websphere.ras.TraceComponent@39ac3eed
+      oByteBuffer = class java.nio.HeapByteBuffer@4633b93
+      oWsBBDirect = null
+      booleanReleaseCalled = class java.util.concurrent.atomic.AtomicBoolean@7c25ea66
+      oWsByteBufferPoolManager = class com.ibm.ws.bytebuffer.internal.WsByteBufferPoolManagerImpl@28095d13
+      isDirectPool = false
+      readOnly = false
+      trusted = false
+      removedFromLeakDetection = false
+      ownerID = null
+      lastAccessTime = 0
+      wsBBRoot = class com.ibm.ws.bytebuffer.internal.PooledWsByteBufferImpl@40c2d25c
+      wsBBRefRoot = null
+      NOT_ACTIVATED = 0
+      ACTIVATED = 1
+      quickBufferAction = 0
+      GET_THRESHOLD = 1023
+      PUT_THRESHOLD = 2047
+      status = 1
+    this$0 = class com.ibm.ws.channel.ssl.internal.SSLConnectionLink@38ded7bb
+      tc = class com.ibm.websphere.ras.TraceComponent@503fc155
+      LINKCONFIG = "SSLLINKCONFIG"
+      sslChannel = class com.ibm.ws.channel.ssl.internal.SSLChannel@253d79e6
+      linkConfig = class com.ibm.ws.channel.ssl.internal.SSLLinkConfig@320b6a65
+      sslEngine = class sun.security.ssl.SSLEngineImpl@6e0cbe1b
+      readInterface = class com.ibm.ws.channel.ssl.internal.SSLReadServiceContext@434df949
+      writeInterface = class com.ibm.ws.channel.ssl.internal.SSLWriteServiceContext@4716fd5a
+      deviceServiceContext = class com.ibm.ws.tcpchannel.internal.TCPConnLink@92a5e17
+      deviceReadInterface = class com.ibm.ws.tcpchannel.internal.NioTCPReadRequestContextImpl@1c248619
+      deviceWriteInterface = class com.ibm.ws.tcpchannel.internal.NioTCPWriteRequestContextImpl@601b4515
+      sslConnectionContext = class com.ibm.ws.channel.ssl.internal.SSLConnectionContextImpl@6becd36b
+      discState = null
+      connected = true
+      closed = false
+      isInbound = true
+      syncConnectFailure = false
+      vcHashCode = 1454554587
+      sslContext = class javax.net.ssl.SSLContext@40e130fc
+      targetAddress = null
+      alpnProtocol = null
+      http2Enabled = true
+      alpnNegotiator = null
+      cleanupLock = class java.util.concurrent.locks.ReentrantLock@7a68e618
+      tc = class com.ibm.websphere.ras.TraceComponent@7d2c2d5f
+      linkOnDeviceSide = class com.ibm.ws.tcpchannel.internal.TCPConnLink@92a5e17
+      linkOnApplicationSide = null
+      vc = class com.ibm.ws.channelfw.internal.InboundVirtualConnectionImpl@56b2bddb
+  readContext = class com.ibm.ws.channel.ssl.internal.SSLReadServiceContext@434df949
+    tc = class com.ibm.websphere.ras.TraceComponent@1e74b237
+      strings[0] = "TraceComponent[com.ibm.ws.channel.ssl.internal.SSLReadServiceContext,class com.ibm.ws.channel.ssl.internal.SSLReadServiceContext,[SSLChannel],com.ibm.ws.channel.ssl.internal.resources.SSLChannelMessages,null]"
+    callback = class com.ibm.ws.channel.ssl.internal.SSLConnectionLink$MyReadCompletedCallback@11302b44
+    callerRequiredAllocation = false
+    jITAllocateSize = 0
+    netBuffer = class com.ibm.ws.bytebuffer.internal.PooledWsByteBufferImpl@40f8203
+      tc = class com.ibm.websphere.ras.TraceComponent@2c7a1d59
+      serialVersionUID = -7843989267561719849
+      getMin = -1
+      getMax = -1
+      putMin = -1
+      putMax = -1
+      readMin = -1
+      readMax = -1
+      COPY_ALL_INIT = 0
+      COPY_WHEN_NEEDED_STATE1 = 1
+      COPY_WHEN_NEEDED_STATE2 = 2
+      COPY_ALL_FINAL = 4
+      actionState = 0
+      actionAccess = class java.lang.Object@3d7fc4b
+      identifier = 0
+      intReferenceCount = 1
+      pool = class com.ibm.ws.bytebuffer.internal.WsByteBufferPool@15f0e672
+      owners = null
+      allWsByteBuffers = null
+      serialVersionUID = 3794216509672320032
+      tc = class com.ibm.websphere.ras.TraceComponent@39ac3eed
+      oByteBuffer = class java.nio.DirectByteBuffer@68b5b3b6
+      oWsBBDirect = null
+      booleanReleaseCalled = class java.util.concurrent.atomic.AtomicBoolean@543c3f4f
+      oWsByteBufferPoolManager = class com.ibm.ws.bytebuffer.internal.WsByteBufferPoolManagerImpl@28095d13
+      isDirectPool = true
+      readOnly = false
+      trusted = false
+      removedFromLeakDetection = false
+      ownerID = null
+      lastAccessTime = 0
+      wsBBRoot = class com.ibm.ws.bytebuffer.internal.PooledWsByteBufferImpl@40f8203
+      wsBBRefRoot = null
+      NOT_ACTIVATED = 0
+      ACTIVATED = 1
+      quickBufferAction = 0
+      GET_THRESHOLD = 1023
+      PUT_THRESHOLD = 2047
+      status = 1
+    decryptedNetBuffers = interface com.ibm.wsspi.bytebuffer.WsByteBuffer[1]
+      WsByteBuffer[0] = class com.ibm.ws.bytebuffer.internal.PooledWsByteBufferImpl@40c2d25c
+    decryptedNetLimitInfo = {24576} /* array length = 1 */
+    decryptedNetPosInfo = {0} /* array length = 1 */
+    unconsumedDecData = null
+    decryptedNetBufferReleaseRequired = false
+    deviceReadContext = class com.ibm.ws.tcpchannel.internal.NioTCPReadRequestContextImpl@1c248619
+      strings[0] = "NioTCPReadRequestContextImpl@472155673: aborted=false"
+      strings[1] = "NioTCPReadRequestContextImpl@472155673: forceQueue=false"
+      strings[2] = "NioTCPReadRequestContextImpl@472155673: ioAmount=1"
+      strings[3] = "NioTCPReadRequestContextImpl@472155673: ioCompleteAmt=31"
+      strings[4] = "NioTCPReadRequestContextImpl@472155673: ioDoneAmt=0"
+      strings[5] = "NioTCPReadRequestContextImpl@472155673: lastIOAmt=31"
+      strings[6] = "NioTCPReadRequestContextImpl@472155673: isRead=true"
+      strings[7] = "NioTCPReadRequestContextImpl@472155673: timeoutInterval=60000"
+      strings[8] = "NioTCPReadRequestContextImpl@472155673: timeoutTime=1647599993749"
+      strings[9] = "NioTCPReadRequestContextImpl@472155673: link=com.ibm.ws.tcpchannel.internal.TCPConnLink@92a5e17"
+      strings[10] = "TCPConnLink@153771543: tcpChannel=com.ibm.ws.tcpchannel.internal.NioTCPChannel@7fb5c1f8"
+      strings[11] = "TCPConnLink@153771543: closed=false"
+      strings[12] = "TCPConnLink@153771543: socketIOChannel=com.ibm.ws.tcpchannel.internal.NioSocketIOChannel@4ac64f06"
+      strings[13] = "NioSocketIOChannel@1254510342: closed=false"
+      strings[14] = "NioSocketIOChannel@1254510342: processClose=true"
+      strings[15] = "NioSocketIOChannel@1254510342: checkCancel=false"
+      strings[16] = "NioSocketIOChannel@1254510342: tcpChannel=com.ibm.ws.tcpchannel.internal.NioTCPChannel@7fb5c1f8"
+      strings[17] = "NioSocketIOChannel@1254510342: socket=Socket[addr=/127.0.0.1,port=49877,localport=9443]"
+      strings[18] = "NioSocketIOChannel@1254510342: remoteAddr=/127.0.0.1"
+      strings[19] = "NioSocketIOChannel@1254510342: remotePort=49877"
+      strings[20] = "NioSocketIOChannel@1254510342: localAddr=/127.0.0.1"
+      strings[21] = "NioSocketIOChannel@1254510342: localPort=9443"
+      strings[22] = "NioSocketIOChannel@1254510342: channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:9443 remote=/127.0.0.1:49877]"
+      strings[23] = "TCPConnLink@153771543: numReads=3"
+      strings[24] = "TCPConnLink@153771543: numWrites=3"
+      strings[25] = "TCPConnLink@153771543: callCompleteLocal=false"
+      strings[26] = "NioTCPReadRequestContextImpl@472155673: callback=com.ibm.ws.channel.ssl.internal.SSLReadServiceContext$SSLReadCompletedCallback@1ca356c"
+      strings[27] = "NioTCPReadRequestContextImpl@472155673: jitAllocateSize=0"
+      strings[28] = "NioTCPReadRequestContextImpl@472155673: jitAllocateAction=false"
+    bytesProduced = 0
+    bytesRequested = 1
+    netBufferMark = 0
+    queuedWork = class com.ibm.ws.channel.ssl.internal.SSLReadServiceContext$QueuedWork@69e56012
+      READ = 0
+      ERROR = 1
+      COMPLETE = 2
+      numBytes = 0
+      userCallback = null
+      timeout = 0
+      vc = null
+      tcpReadRequestContext = null
+      exception = null
+      action = 0
+      this$0 = class com.ibm.ws.channel.ssl.internal.SSLReadServiceContext@434df949
+    readCallback = class com.ibm.ws.channel.ssl.internal.SSLReadServiceContext$SSLReadCompletedCallback@1ca356c
+    readNeededInternalException = class com.ibm.ws.channel.ssl.internal.exception.ReadNeededInternalException@74f66352
+      serialVersionUID = -3236620232328367856
+      serialVersionUID = 4309702246400782423
+      suppressFFDC = false
+      serialVersionUID = 7351509803790105244
+      serialVersionUID = -3387516993124229948
+      serialVersionUID = -3042686055658047285
+      detailMessage = "All available data read, but more needed, read again"
+      UNASSIGNED_STACK = class java.lang.StackTraceElement[0]
+      cause = class com.ibm.ws.channel.ssl.internal.exception.ReadNeededInternalException@74f66352
+      stackTrace = class java.lang.StackTraceElement[0]
+      SUPPRESSED_SENTINEL = class java.util.Collections$UnmodifiableRandomAccessList@5294ac9a
+      suppressedExceptions = class java.util.Collections$UnmodifiableRandomAccessList@5294ac9a
+      NULL_CAUSE_MESSAGE = "Cannot suppress a null exception."
+      SELF_SUPPRESSION_MESSAGE = "Self-suppression not permitted"
+      CAUSE_CAPTION = "Caused by: "
+      SUPPRESSED_CAPTION = "Suppressed: "
+      EMPTY_THROWABLE_ARRAY = class java.lang.Throwable[0]
+      $assertionsDisabled = true
+    sessionClosedException = class com.ibm.ws.channel.ssl.internal.exception.SessionClosedException@4c5a379b
+      serialVersionUID = 2648809003861385674
+      serialVersionUID = 4309702246400782423
+      suppressFFDC = false
+      serialVersionUID = 7351509803790105244
+      serialVersionUID = -3387516993124229948
+      serialVersionUID = -3042686055658047285
+      detailMessage = "SSL engine is closed"
+      UNASSIGNED_STACK = class java.lang.StackTraceElement[0]
+      cause = class com.ibm.ws.channel.ssl.internal.exception.SessionClosedException@4c5a379b
+      stackTrace = class java.lang.StackTraceElement[0]
+      SUPPRESSED_SENTINEL = class java.util.Collections$UnmodifiableRandomAccessList@5294ac9a
+      suppressedExceptions = class java.util.Collections$UnmodifiableRandomAccessList@5294ac9a
+      NULL_CAUSE_MESSAGE = "Cannot suppress a null exception."
+      SELF_SUPPRESSION_MESSAGE = "Self-suppression not permitted"
+      CAUSE_CAPTION = "Caused by: "
+      SUPPRESSED_CAPTION = "Suppressed: "
+      EMPTY_THROWABLE_ARRAY = class java.lang.Throwable[0]
+      $assertionsDisabled = true
+    closeSync = class java.lang.Object@4a63ae04
+    closeCalled = false
+    connectionLink = class com.ibm.ws.channel.ssl.internal.SSLConnectionLink@38ded7bb
+    buffers = interface com.ibm.wsspi.bytebuffer.WsByteBuffer[1]
+    defaultBuffers = interface com.ibm.wsspi.bytebuffer.WsByteBuffer[1]
+    config = class com.ibm.ws.channel.ssl.internal.SSLChannelData@844a2aa
+      tc = class com.ibm.websphere.ras.TraceComponent@49f8436d
+      ENCRYPT_BUFFERS_DIRECT = "encryptBuffersDirect"
+      DECRYPT_BUFFERS_DIRECT = "decryptBuffersDirect"
+      SSLSESSION_CACHE_SIZE = "SSLSessionCacheSize"
+      SSLSESSION_TIMEOUT = "SSLSessionTimeout"
+      SSLSESSION_TIMEOUT_8500 = "sessionTimeout"
+      DEFAULT_ENCRYPT_BUFFERS_DIRECT = "true"
+      DEFAULT_DECRYPT_BUFFERS_DIRECT = "false"
+      DEFAULT_SSLSESSION_CACHE_SIZE = 100
+      DEFAULT_SSLSESSION_TIMEOUT = 86400
+      ALIAS_KEY = "alias"
+      name = "SSL-defaultHttpEndpoint-ssl_CFINTERNAL_CHILD_0"
+      encryptBuffersDirect = true
+      decryptBuffersDirect = false
+      weight = 10
+      isInbound = true
+      clientAuthentication = false
+      properties = class java.util.Properties@3ad8ed16
+      sslSessionCacheSize = 100
+      sslSessionTimeout = 86400
+    myVC = class com.ibm.ws.channelfw.internal.InboundVirtualConnectionImpl@56b2bddb
+      discStatus = null
+      dp = null
+      tc = class com.ibm.websphere.ras.TraceComponent@f76d9fb
+      ONE_MILLISECOND_IN_NANOSECONDS = 1000000
+      stateStore = class java.util.HashMap@6c120731
+      READ_PENDING = 4097
+      READ_WAITING = 4098
+      READ_FINISHING = 4100
+      WRITE_PENDING = 4112
+      WRITE_WAITING = 4128
+      WRITE_FINISHING = 4160
+      CLOSE_PENDING = 4352
+      IN_USE_MASK = 4096
+      IN_USE_MASK_CLEAR_OUT = -4097
+      READ_PENDING_CLEAR_OUT = -7
+      READ_FINISHING_CLEAR_OUT = -4
+      READ_WAITING_CLEAR_OUT = -6
+      READ_DONE_CLEAR_OUT = -8
+      WRITE_PENDING_CLEAR_OUT = -97
+      WRITE_FINISHING_CLEAR_OUT = -49
+      WRITE_WAITING_CLEAR_OUT = -81
+      WRITE_DONE_CLEAR_OUT = -113
+      CLOSE_NOT_ALLOWED_MASK = 341
+      FINISH_NOT_ALLOWED_MASK = 256
+      READ_NOT_ALLOWED_MASK = 263
+      WRITE_NOT_ALLOWED_MASK = 368
+      READ_OUTSTANDING = 7
+      WRITE_OUTSTANDING = 112
+      closeWaiting = false
+      currentState = 0
+      readOutWithClosePending = false
+      writeOutWithClosePending = false
+      inetAddressingValid = true
+      connDesc = class com.ibm.ws.channelfw.internal.ConnectionDescriptorImpl@18d8c606
+      fileChannelCapable = 2
+    myVCHashCode = 1454554587
+  this$0 = class com.ibm.ws.channel.ssl.internal.SSLReadServiceContext@434df949
+

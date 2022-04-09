@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<liberty-plugin-config>
+    <activeBuildProfiles>
+        <profileId>redhat-ga-repository</profileId>
+        <profileId>java-net-public</profileId>
+        <profileId>bintray</profileId>
+        <profileId>repository-apache-org</profileId>
+        <profileId>jboss-public-repository</profileId>
+    </activeBuildProfiles>
+    <installDirectory>C:\programacion\liberty\seguridad\guide-security-intro\finish\target\liberty\wlp</installDirectory>
+    <serverDirectory>C:\programacion\liberty\seguridad\guide-security-intro\finish\target\liberty\wlp\usr\servers\defaultServer</serverDirectory>
+    <userDirectory>C:\programacion\liberty\seguridad\guide-security-intro\finish\target\liberty\wlp\usr</userDirectory>
+    <serverOutputDirectory>C:\programacion\liberty\seguridad\guide-security-intro\finish\target\liberty\wlp\usr\servers\defaultServer</serverOutputDirectory>
+    <serverName>defaultServer</serverName>
+    <configDirectory>C:\programacion\liberty\seguridad\guide-security-intro\finish\src\main\liberty\config</configDirectory>
+    <configFile>C:\programacion\liberty\seguridad\guide-security-intro\finish\src\main\liberty\config\server.xml</configFile>
+    <appsDirectory>apps</appsDirectory>
+    <looseApplication>true</looseApplication>
+    <stripVersion>false</stripVersion>
+    <installAppPackages>project</installAppPackages>
+    <applicationFilename>guide-security-intro.war.xml</applicationFilename>
+    <assemblyArtifact>
+        <groupId>io.openliberty</groupId>
+        <artifactId>openliberty-kernel</artifactId>
+        <version>22.0.0.3</version>
+        <type>zip</type>
+    </assemblyArtifact>
+    <assemblyArchive>C:\Users\alvar\.m2\repository\io\openliberty\openliberty-kernel\22.0.0.3\openliberty-kernel-22.0.0.3.zip</assemblyArchive>
+    <assemblyInstallDirectory>C:\programacion\liberty\seguridad\guide-security-intro\finish\target\liberty</assemblyInstallDirectory>
+    <refresh>false</refresh>
+    <installAppsConfigDropins>C:\programacion\liberty\seguridad\guide-security-intro\finish\target\liberty\wlp\usr\servers\defaultServer\configDropins\defaults\install_apps_configuration_1491924271.xml</installAppsConfigDropins>
+    <projectType>war</projectType>
+</liberty-plugin-config>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive>
+    <dir sourceOnDisk="C:\programacion\liberty\seguridad\guide-security-intro\finish\src\main\webapp" targetInArchive="/"/>
+    <dir sourceOnDisk="C:\programacion\liberty\seguridad\guide-security-intro\finish\target\classes" targetInArchive="/WEB-INF/classes"/>
+    <file sourceOnDisk="C:\programacion\liberty\seguridad\guide-security-intro\finish\target\tmp\META-INF\MANIFEST.MF" targetInArchive="/META-INF/MANIFEST.MF"/>
+</archive>

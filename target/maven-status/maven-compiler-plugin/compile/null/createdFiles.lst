@@ -1,0 +1,4 @@
+io\openliberty\guides\ui\HomeServlet.class
+io\openliberty\guides\ui\UserBean.class
+io\openliberty\guides\ui\Utils.class
+io\openliberty\guides\ui\NoCacheFilter.class
